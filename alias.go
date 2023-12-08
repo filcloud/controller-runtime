@@ -21,6 +21,7 @@ package controllerruntime
 import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
+
 	"sigs.k8s.io/controller-runtime/pkg/builder"
 	"sigs.k8s.io/controller-runtime/pkg/client/config"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
@@ -131,5 +132,5 @@ var (
 	// If development is true, a Zap development config will be used
 	// (stacktraces on warnings, no sampling), otherwise a Zap production
 	// config will be used (stacktraces on errors, sampling).
-	ZapLogger = log.ZapLogger
+	// ZapLogger = log.ZapLogger
 )
